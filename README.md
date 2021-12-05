@@ -32,7 +32,7 @@ Items will likely be availible cheaper elsewhere, this is just for consistency.
 
     https://www.amazon.co.uk/dp/B08T1ZXS7K/
 
-3. 128x32 OLED Display (I2C)
+3. 128x32 OLED Display (I2C) - Any colour will work (typically blue, white or yellow)
 
     https://www.amazon.co.uk/AZDelivery-Display-Pixels-Arduino-Raspberry/dp/B079H2C7WH/
 
@@ -49,34 +49,57 @@ Items will likely be availible cheaper elsewhere, this is just for consistency.
     https://www.amazon.co.uk/AZDelivery-Drehwinkelgeber-Rotary-Encoder-Arduino/dp/B079H3C98M/
     
 
+**Programming**
+
+This assumes you are familiar with the Arduino platform and IDE.
+1. Clone repository to Arduino projects folder (typically Documents\Arduino)
+2. Connect up a Arduino Nano via USB and check it is recognised in the Arduino IDE (https://www.arduino.cc/en/software)
+
+    You may need to update the bootloader or select Tools > Processor > old bootloader if the Nano is not recognised.
+3. Satisfy project library dependancies via Tools > Manage Libraries as required
+4. Hit Upload
+5. Disconnect when successful and proceed to wiring
+
+
 **Wiring**
+
 
   Arduino Nano:
 
                                    +-----+
                       +------------| USB |------------+
                       |            +-----+            |
-       (Built-in LED) | [ ]D13/SCK        MISO/D12[X] | PIN_RELAY
-          [OLED 3.3V] | [X]3.3V           MOSI/D11[X] | PIN_RESET
-                      | [ ]V.ref     ___    SS/D10[X] | PIN_32
-                      | [ ]A0       / N \       D9[X] | PIN_16
-                      | [ ]A1      /  A  \      D8[X] | PIN_8
-                      | [ ]A2      \  N  /      D7[X] | PIN_4
-                      | [ ]A3       \_0_/       D6[X] | PIN_2
-           [OLED SDA] | [X]A4/SDA               D5[X] | PIN_1
-           [OLED SCL] | [X]A5/SCL               D4[X] | ROTARY_BTN_PIN
-                      | [ ]A6              INT1/D3[X] | ROTARY_PIN1
-                      | [ ]A7              INT0/D2[X] | ROTARY_PIN2
+       (Built-in LED) | [ ]D13/SCK        MISO/D12[X] | PIN_RELAY - duplicate output of PIN_RESET (Not used)
+          [OLED 3.3V] | [X]3.3V           MOSI/D11[X] | PIN_RESET - to Darksoft Reset PIN
+                      | [ ]V.ref     ___    SS/D10[X] | PIN_32    - to Darksoft GAME SELECTOR +32 PIN
+                      | [ ]A0       / N \       D9[X] | PIN_16    - to Darksoft GAME SELECTOR +16 PIN
+                      | [ ]A1      /  A  \      D8[X] | PIN_8     - to Darksoft GAME SELECTOR +8 PIN
+                      | [ ]A2      \  N  /      D7[X] | PIN_4     - to Darksoft GAME SELECTOR +4 PIN
+                      | [ ]A3       \_0_/       D6[X] | PIN_2     - to Darksoft GAME SELECTOR +2 PIN
+           [OLED SDA] | [X]A4/SDA               D5[X] | PIN_1     - to Darksoft GAME SELECTOR +1 PIN
+           [OLED SCL] | [X]A5/SCL               D4[X] | ROTARY_BTN_PIN - Typically SW / SWITCH
+                      | [ ]A6              INT1/D3[X] | ROTARY_PIN1    - Typically DT / DATA
+                      | [ ]A7              INT0/D2[X] | ROTARY_PIN2    - Typically CLK / CLOCK
                   +5V | [X]5V                  GND[X] | GND
                       | [ ]RST                 RST[ ] |
            [OLED GND] | [X]GND   5V MOSI GND   TX1[ ] |
-                      | [ ]Vin   [ ] [ ] [ ]   RX0[ ] |
+                      | [ ]Vin   [#] [ ] [#]   RX0[ ] |
                       |          [ ] [ ] [ ]          |
                       |          MISO SCK RST         |
                       | NANO                          |
                       +-------------------------------+
+                      # Connect 5V to Darksoft +5V
+                      # Connect GND to Darksoft GND
+
+                      After programming, the Arduino is then hooked up to be powered and grounded to the Darksoft Multi.
+                      
+                      Please *do not* power the Arduino from a separate source when Arcade Board / Darksoft is powered.
+                      Please *do not* use USB to attempt to power the Arduino + Darksoft + Arcade Board.
+                      Please *do not* have the USB cable hooked up when supplying power to the Darksoft + Arcade Board.
+
 
 Rotary encoders for Arduino use come in various specifications and some have PIN1 (CLK) and PIN2 (DT) reversed. If so, just reverse the pins. Works with or without pull down resistors or bypass ceramic capacitors on the module (from testing over four different encoder types & configurations for GOTEK use).
+
 
 **Legal Disclaimer**
 

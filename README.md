@@ -27,7 +27,7 @@ Date: 2021.12.05
 
 **BOM**
 
-Items will likely be availible cheaper elsewhere, this is just for consistency.
+Items will be availible cheaper elsewhere, this is just for consistency/availibility.
 1. Arduino Nano
 
     https://www.amazon.co.uk/dp/B01MS7DUEM/
@@ -52,6 +52,18 @@ Items will likely be availible cheaper elsewhere, this is just for consistency.
 
     https://www.amazon.co.uk/AZDelivery-Drehwinkelgeber-Rotary-Encoder-Arduino/dp/B079H3C98M/
     
+>**BOM via Aliexpress / Ebay for 1x approx costs**
+
+    Nano: £4
+    Breakout board: £3
+    OLED: £4
+    Dupont kit: £6
+    Nylon Hex kit: £6
+    Rotary encoder: £4
+    [ Approx Total: £27* ]
+    
+    *Does not include assembly time or cups of tea.
+
 
 **Programming**
 

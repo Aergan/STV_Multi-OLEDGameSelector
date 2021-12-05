@@ -49,6 +49,35 @@ Items will likely be availible cheaper elsewhere, this is just for consistency.
     https://www.amazon.co.uk/AZDelivery-Drehwinkelgeber-Rotary-Encoder-Arduino/dp/B079H3C98M/
     
 
+**Wiring**
+
+  Arduino Nano:
+
+                                   +-----+
+                      +------------| USB |------------+
+                      |            +-----+            |
+       (Built-in LED) | [ ]D13/SCK        MISO/D12[X] | PIN_RELAY
+          [OLED 3.3V] | [X]3.3V           MOSI/D11[X] | PIN_RESET
+                      | [ ]V.ref     ___    SS/D10[X] | PIN_32
+                      | [ ]A0       / N \       D9[X] | PIN_16
+                      | [ ]A1      /  A  \      D8[X] | PIN_8
+                      | [ ]A2      \  N  /      D7[X] | PIN_4
+                      | [ ]A3       \_0_/       D6[X] | PIN_2
+           [OLED SDA] | [X]A4/SDA               D5[X] | PIN_1
+           [OLED SCL] | [X]A5/SCL               D4[X] | ROTARY_BTN_PIN
+                      | [ ]A6              INT1/D3[X] | ROTARY_PIN1
+                      | [ ]A7              INT0/D2[X] | ROTARY_PIN2
+                  +5V | [X]5V                  GND[X] | GND
+                      | [ ]RST                 RST[ ] |
+           [OLED GND] | [X]GND   5V MOSI GND   TX1[ ] |
+                      | [ ]Vin   [ ] [ ] [ ]   RX0[ ] |
+                      |          [ ] [ ] [ ]          |
+                      |          MISO SCK RST         |
+                      | NANO                          |
+                      +-------------------------------+
+
+Rotary encoders for Arduino use come in various specifications and some have PIN1 (CLK) and PIN2 (DT) reversed. If so, just reverse the pins. Works with or without pull down resistors or bypass ceramic capacitors on the module (from testing over four different encoder types & configurations for GOTEK use).
+
 **Legal Disclaimer**
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

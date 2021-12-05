@@ -19,8 +19,12 @@ Date: 2021.12.05
   
   Using code examples & libraries from Adafruit (https://github.com/adafruit/Adafruit_SSD1306) & Erriez (https://github.com/Erriez/ErriezArduinoLibraries)
 
+![PXL_20211204_180253421](https://user-images.githubusercontent.com/7755236/144752050-325a20f3-e83e-4963-b5d4-a85a39df9d8a.jpg)
 
-  
+
+![PXL_20211204_180337650](https://user-images.githubusercontent.com/7755236/144752066-0b16f91a-f645-4902-81f2-e6e502c369c0.jpg)
+
+
 **BOM**
 
 Items will likely be availible cheaper elsewhere, this is just for consistency.

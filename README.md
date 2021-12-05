@@ -25,6 +25,11 @@ Date: 2021.12.05
 ![PXL_20211204_180337650](https://user-images.githubusercontent.com/7755236/144752066-0b16f91a-f645-4902-81f2-e6e502c369c0.jpg)
 
 
+**BUILD Log on Twitter**
+
+https://twitter.com/A3rgan/status/1467530975093870592
+
+
 **BOM**
 
 Items will be availible cheaper elsewhere, this is just for consistency/availibility.

@@ -10,9 +10,9 @@
     Please note that this iteration is not pin compatible with the original that it is based upon.
 
     Hackity hacked by Simon Lock (twitter.com/@a3rgan)
-    Code Refactoring by Dennis V.B (twitter.com/@pointerfuction)
+    Code Refactoring by  Dennis van den Broek (twitter.com/@pointerfuction)
 
-    Using code examples & libraries from Adafruit & Erriez (https://github.com/Erriez/ErriezArduinoLibraries)
+    Using code examples & libraries from Adafruit (https://github.com/adafruit/Adafruit_SSD1306) & Erriez (https://github.com/Erriez/ErriezArduinoLibraries)
 
 
   Arduino Nano:

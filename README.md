@@ -100,6 +100,15 @@ This assumes you are familiar with the Arduino platform and IDE.
 
 Rotary encoders for Arduino use come in various specifications and some have PIN1 (CLK) and PIN2 (DT) reversed. If so, just reverse the pins. Works with or without pull down resistors or bypass ceramic capacitors on the module (from testing over four different encoder types & configurations for GOTEK use).
 
+**Darksoft ST-V Multi Pinout**
+
+![image](https://user-images.githubusercontent.com/7755236/144748890-47d2378e-9ca0-4aa6-ab59-a1b64267f1ab.png)
+
+**SEGA ST-V Reset**
+
+  >Solder to R440 or PIN 8 of IC12.
+
+![Wiring - STV Reset](https://user-images.githubusercontent.com/7755236/144751772-7b484798-9ffe-4b61-8364-0e78fd221424.jpg)
 
 **Legal Disclaimer**
 

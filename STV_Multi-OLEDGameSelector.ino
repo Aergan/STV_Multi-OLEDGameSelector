@@ -73,7 +73,7 @@
 #define PIN_32             10     // Darksoft Game Selector PIN +32
 
 // Defines
-#define NUMBER_OF_GAMES    55    // Update this if you increate or decrease the games in the array below
+#define NUMBER_OF_GAMES    55    // Update this if you increase or decrease the games in the array below
 #define MAX_NAME_SIZE      60    // Maximum number of characters per game entry
 #define OLED_MAX_CHAR      21    // Maximum number of characters displayed simultaneously on a 128x32 OLED @ text size 1
 #define DELAY_DSWRITE      20000 // Wait 20 seconds - roughly the time it takes for a full reset, game writes can often take longer

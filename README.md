@@ -13,9 +13,9 @@ Date: 2021.12.05
 
   Please note that this iteration is not pin compatible with the original that it is based upon.
 
-  Hackity hacked by Simon Lock (https://twitter.com/@a3rgan)
+  Hackity hacked by Simon Lock (https://bsky.app/profile/aergan.com)
   
-  Code Refactoring by Dennis van den Broek (https://twitter.com/@pointerfuction)
+  Code Refactoring by Dennis van den Broek (https://bsky.app/profile/pointerfunction.bsky.social)
   
   Using code examples & libraries from Adafruit (https://github.com/adafruit/Adafruit_SSD1306) & Erriez (https://github.com/Erriez/ErriezArduinoLibraries)
 
@@ -25,9 +25,8 @@ Date: 2021.12.05
 ![PXL_20211204_180337650](https://user-images.githubusercontent.com/7755236/144752066-0b16f91a-f645-4902-81f2-e6e502c369c0.jpg)
 
 
-**BUILD Log on Twitter**
-
-https://twitter.com/A3rgan/status/1467530975093870592
+Demo video
+https://youtu.be/TMKgDG9jXHc
 
 
 **BOM**
